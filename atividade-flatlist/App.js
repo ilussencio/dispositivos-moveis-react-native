@@ -14,6 +14,5 @@ const styles = StyleSheet.create({
   container:{
     flex: 1,
     backgroundColor: '#e8f1f2',
-    marginTop: 20,
   }
 })
