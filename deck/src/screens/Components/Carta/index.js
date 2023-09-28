@@ -1,4 +1,4 @@
-import { View, Text, Image } from "react-native";
+import { View, Text, Image, Button } from "react-native";
 
 export default function Carta({item}){
     console.log(item)
@@ -6,14 +6,13 @@ export default function Carta({item}){
     return (
         
         <View>
-            <Text>{item.code}</Text>
-            <Image 
-                source={require('{item.image}')}
+            <Image
+                source={{
+                    uri: item.image,
+                }}
+                width={70}
+                height={100}
             />
-            <Text>{item.image}</Text>
-            <Text>{item.value}</Text>
-            <Text>{item.suit}</Text>
-            <Text>Carta</Text>
         </View>
     );
 }
